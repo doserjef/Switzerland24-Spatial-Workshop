@@ -10,10 +10,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="author" content="Jeffrey W. Doser Marc Kéry Michigan State University, Swiss Ornithological Institute" />
+<meta name="author" content="Jeffrey W. Doser, Marc Kéry Michigan State University, Swiss Ornithological Institute" />
 
 
-<title>Spatially-explicit hierarchical modelling for applied population and community ecology</title>
+<title>Hierarchical spatial modelling for applied population and community ecology</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -72,8 +72,8 @@ code span.ot { color: #007020; }
 
 
 <section class="page-header">
-<h1 class="title toc-ignore project-name">Spatially-explicit hierarchical modelling for applied population and community ecology</h1>
-<h4 class="author project-author">Jeffrey W. Doser<br>Marc Kéry<br>Michigan State University, Swiss Ornithological Institute</h4>
+<h1 class="title toc-ignore project-name">Hierarchical spatial modelling for applied population and community ecology</h1>
+<h4 class="author project-author">Jeffrey W. Doser, Marc Kéry<br>Michigan State University, Swiss Ornithological Institute</h4>
 <h4 class="date project-date">Workshop dates: 24-27 June 2024</h4>
 </section>
 
@@ -83,33 +83,34 @@ code span.ot { color: #007020; }
 <div id="course-information" class="section level2">
 <h2>Course information</h2>
 <p><strong>Instructors</strong>: Jeff Doser and Marc Kéry</p>
+<p><strong>Teaching Assistant</strong>: Gesa von Hirschheydt</p>
 <p><strong>Venue</strong>: Swiss Ornithological Institute, Sempach, Switzerland</p>
 <p><strong>Computers</strong>: Bring your own laptop with <code>R</code> installed and <code>R</code> packages <code>spOccupancy</code> and <code>spAbundance</code></p>
-<p><strong>Registration</strong>: XXX (normal rate), XXX (student rate)</p>
+<p><strong>Registration</strong>: 500 francs (normal rate), 350 francs (student rate)</p>
 <hr />
 </div>
 <div id="course-description" class="section level2">
 <h2>Course description</h2>
 <p>Hierarchical models have been widely deployed for the modelling of species distribution and abundance, because they enable one to separately model the actual quantity of interest (i.e., presence/absence or abundance) from measurement errors commonly found in ecological data sets (e.g., false negatives). When modelling species distributions/abundance across large spatial domains and/or using a large number of observed locations, accommodating spatial autocorrelation becomes increasingly important. Failing to account for measurement errors and/or residual spatial autocorrelation (i.e., remaining spatial autocorrelation after accounting for environmental covariates) can lead to biased and overly precise estimates, potentially jeapardizing scientific conclusions and management decisions based on such data sets.</p>
-<p>In this workshop, we present highly scalable approches for spatially-explicit hierarchical Bayesian modelling of species distributions and abundance. This course focuses on practical implementation of spatially-explicit hierarchical models using the <code>spOccupancy</code> and <code>spAbundance</code> R packages. Course topics include:</p>
+<p>In this workshop, we present highly scalable approches for hierarchical Bayesian spatial modelling of species distributions and abundance. This course focuses on practical implementation of hierarchical spatial models using the <code>spOccupancy</code> and <code>spAbundance</code> R packages. Course topics include:</p>
 <ol style="list-style-type: decimal">
 <li>Introduction to hierarchical and spatial modelling
 <ul>
 <li>Hierarchical models in ecology</li>
 <li>Introduction to spatial statistics (e.g., kriging, Gaussian Processes)</li>
 <li>Bayesian analysis of spatial data</li>
-<li>Spatially-explicit modelling of big data</li>
+<li>Spatial modelling of big data</li>
 </ul></li>
-<li>Spatially-explicit modelling of binary detection-nondetection data with <code>spOccupancy</code>
+<li>Spatial modelling of binary detection-nondetection data with <code>spOccupancy</code>
 <ul>
 <li>Single-species spatial occupancy models</li>
 <li>Multi-species spatial occupancy models</li>
 <li>Joint species distribution models with imperfect detection</li>
 <li>Spatially-varying coefficient occupancy models</li>
 </ul></li>
-<li>Spatially-explicit modelling of count data with <code>spAbundance</code>
+<li>Spatial modelling of count data with <code>spAbundance</code>
 <ul>
-<li>Single-species GLMMs</li>
+<li>Single-species spatial GLMMs</li>
 <li>Single-species spatial N-mixture models</li>
 <li>Single-species spatial hierarchical distance sampling models</li>
 <li>Abundance-based joint species distribution models with imperfect detection</li>
@@ -121,6 +122,11 @@ code span.ot { color: #007020; }
 <div id="application-instructions" class="section level2">
 <h2>Application instructions</h2>
 <p>Please send an email to Jeff Doser (<a href="mailto:doserjef@msu.edu" class="email">doserjef@msu.edu</a>) and Marc Kéry (<a href="mailto:marc.kery@vogelwarte.ch" class="email">marc.kery@vogelwarte.ch</a>). In the email, describe your background and knowledge in statistical modelling, R, and occupancy/N-mixture models by <strong>29 March 2024</strong>. Workshop invitations will be sent out shortly thereafter.</p>
+<p>One or two course fee waivers will be available provided we get a sufficient number of paying sign-ups. To apply, please send us a description (at most 0.5 page) of why the course would be important for your work and why you should get a waiver.</p>
+</div>
+<div id="github-code-repository" class="section level2">
+<h2>GitHub Code Repository</h2>
+<p>Code for all course lectures and exercises will be provided on a GitHub repository closer to the workshop dates.</p>
 </div>
 </section>
 
