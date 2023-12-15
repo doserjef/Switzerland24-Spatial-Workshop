@@ -25,14 +25,13 @@ output:
 
 ## Course description
 
-Hierarchical models have been widely deployed for the modelling of species distribution and abundance, because they enable one to separately model the actual quantity of interest (i.e., presence/absence or abundance) from measurement errors commonly found in ecological data sets (e.g., false negatives). When modelling species distributions/abundance across large spatial domains and/or using a large number of observed locations, accommodating spatial autocorrelation becomes increasingly important. Failing to account for measurement errors and/or residual spatial autocorrelation (i.e., remaining spatial autocorrelation after accounting for environmental covariates) can lead to biased and overly precise estimates, potentially jeapardizing scientific conclusions and management decisions based on such data sets.  
+Hierarchical models have been widely deployed for the modelling of species distribution and abundance, because they enable one to separately model the actual quantity of interest (e.g.., presence/absence or abundance) from measurement errors commonly found in ecological data sets. When modelling species distributions/abundance across large spatial domains and/or using a large number of observed locations, accommodating spatial autocorrelation becomes increasingly important. Failing to account for measurement errors and/or residual spatial autocorrelation (i.e., remaining spatial autocorrelation after accounting for environmental covariates) can lead to biased and overly precise estimates, potentially jeopardizing scientific conclusions and management decisions based on such data sets.  
 
 In this workshop, we present highly scalable approches for hierarchical Bayesian spatial modelling of species distributions and abundance. This course focuses on practical implementation of hierarchical spatial models using the `spOccupancy` and `spAbundance` R packages. Course topics include: 
 
 1. Introduction to hierarchical and spatial modelling
-    + Hierarchical models in ecology
+    + Hierarchical Bayesian models in ecology
     + Introduction to spatial statistics (e.g., kriging, Gaussian Processes)
-    + Bayesian analysis of spatial data
     + Spatial modelling of big data
 2. Spatial modelling of binary detection-nondetection data with `spOccupancy`
     + Single-species spatial occupancy models
@@ -45,13 +44,13 @@ In this workshop, we present highly scalable approches for hierarchical Bayesian
     + Single-species spatial hierarchical distance sampling models
     + Abundance-based joint species distribution models with imperfect detection
 
-This intermediate-level course offers lecture, discussion, and hands-on exercises, with approximately 65% of the time on lectures and 35% of the time on exercises. We do not assume previous experience with Bayesian statistics, spatial statistics, or spOccupancy/spAbundance, although participants with basic knowledge of these areas will experience a gentler learning curve. We do require a good working knowledge of modern regression methods (e.g., linear models, generalized linear models) and of program R.  
+This intermediate-level course offers lecture, discussion, and hands-on exercises, with approximately 70% of the time on lectures and 30% of the time on exercises. We do not assume previous experience with Bayesian statistics, spatial statistics, or `spOccupancy/spAbundance`, although participants with basic knowledge of these areas will experience a gentler learning curve. We do require a good working knowledge of modern regression methods (e.g., linear models, generalized linear models) and of program R.  
 
 ********
 
 ## Application instructions
 
-Please send an email to Jeff Doser (doserjef@msu.edu) and Marc K&eacute;ry (marc.kery@vogelwarte.ch). In the email, describe your background and knowledge in statistical modelling, R, and occupancy/N-mixture models by **29 March 2024**. Workshop invitations will be sent out shortly thereafter.
+Please send an email to Jeff Doser (doserjef@msu.edu) and Marc K&eacute;ry (marc.kery@vogelwarte.ch). In the email, briefly describe your background and knowledge in statistical modelling, R, and occupancy/N-mixture models by **29 March 2024**. Workshop invitations will be sent out shortly thereafter.
 
 One or two course fee waivers will be available provided we get a sufficient number of paying sign-ups. To apply, please send us a description (at most 0.5 page) of why the course would be important for your work and why you should get a waiver.
 
