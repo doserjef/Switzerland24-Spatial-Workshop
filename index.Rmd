@@ -48,12 +48,49 @@ This intermediate-level course offers lecture, discussion, and hands-on exercise
 
 ********
 
+## Tentative course schedule
+
+The course will run from 9:00 to approximately 17:00-17:30, with lunch break from 13:00-14:00 and at least two coffee breaks at 10:30-11:00 and 15:30-16:00.
+
+#### Monday 24 June 2024
+
++ 9:00--10:30 Introductions, hierarchical modelling in ecology and occupancy models (Jeff and Marc)
++ 11:00--13:00 Introduction to spatial statistics and `spOccupancy`/`spAbundance` (Jeff and exercise) 
++ 14:00--15:00 Introduction to spatial statistics and `spOccupancy`/`spAbundance` (Jeff and exercise)
++ 15:00--15:30 Modelling big spatial data (Jeff)
++ 16:00--17:00 Single-species spatial occupancy models (Jeff and exercise)
++ 17:00--17:30 Extra time for discussion, questions, etc.
+
+#### Tuesday 25 June 2024
+
++ 9:00--9:45 Single-species spatial occupancy models (Jeff)
++ 9:45--10:30 Occupancy model survey design (Gesa)
++ 11:00--12:30 Application of single-species spatial occupancy models to Swiss birds (Marc)
++ 12:30--13:00 Multi-species spatial occupancy models (Jeff)
++ 14:00--15:30 Multi-species spatial occupancy models (Jeff and exercise)
++ 16:00--17:00 Joint species distribution models with imperfect detection (Jeff)
++ 17:00--17:30 Extra time for discussion, questions, etc.
+
+#### Wednesday 26 June 2024
+
++ 9:00--10:30 Multi-season spatial occupancy models (Jeff and exercise)
++ 11:00--13:00 Multi-season spatial occupancy models and spatially varying trends (Jeff and exercise)
++ 14:00--15:30 Spatial GLMMs for modeling relative abundance or activity (Jeff and exercise)
++ 16:00--17:00 Introduction to N-mixture models (Marc)
++ 17:00--17:30 Extra time for discussion, questions, etc.
+
+#### Thursday 27 June 2024
+
++ 9:00--10:30 Spatial N-mixture models (Jeff and exercise)
++ 11:00--13:00 Multi-species spatial N-mixture models (Jeff and exercise)
++ 14:00--15:30 Spatial hierarchical distance sampling models (Jeff and exercise)
++ 16:00--17:00 Multi-species spatial hierarchical distance sampling models (Jeff and exercise)
++ 17:00--17:30 Extra time for discussion, questions, etc.
+
 ## Application instructions
 
-Please send an email to Jeff Doser (doserjef@msu.edu) and Marc K&eacute;ry (marc.kery@vogelwarte.ch). In the email, briefly describe your background and knowledge in statistical modelling, R, and occupancy/N-mixture models by **29 March 2024**. Workshop invitations will be sent out shortly thereafter.
-
-One or two course fee waivers will be available provided we get a sufficient number of paying sign-ups. To apply, please send us a description (at most 0.5 page) of why the course would be important for your work and why you should get a waiver.
+The application period is closed.
 
 ## GitHub Code Repository
 
-Code for all course lectures and exercises will be provided on a GitHub repository closer to the workshop dates.
+All course lectures, code, and exercises can be found [here on the GitHub repository](https://github.com/doserjef/Switzerland24-Spatial-Workshop). Please note that materials are actively be added to the repository and they will not be finalized until immediately before the workshop begins (approx. 21 June or so), so we encourage you to hold off on downloading the course materials until then. 
