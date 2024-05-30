@@ -12,7 +12,7 @@
 
 ## Repository Directory
 
-The materials for this repository are in active development. We will be adding material to the repository as we make them, but please do not that none of the material will be considered finalized until the workshop begins. If you are interested in these materials, I encourage you to hold off until 21 June 2024 to download the materials here. 
+The materials for this repository are in active development. We will be adding material to the repository as we make them, but please do note that none of the material will be considered finalized until the workshop begins. If you are interested in these materials, I encourage you to hold off until 21 June 2024 to download the materials here. 
 
 ## Acknowledgements
 

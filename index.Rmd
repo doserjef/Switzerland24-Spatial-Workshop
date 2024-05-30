@@ -66,9 +66,10 @@ The course will run from 9:00 to approximately 17:00-17:30, with lunch break fro
 + 9:00--9:45 Single-species spatial occupancy models (Jeff)
 + 9:45--10:30 Occupancy model survey design (Gesa)
 + 11:00--12:30 Application of single-species spatial occupancy models to Swiss birds (Marc)
-+ 12:30--13:00 Multi-species spatial occupancy models (Jeff)
-+ 14:00--15:30 Multi-species spatial occupancy models (Jeff and exercise)
-+ 16:00--17:00 Joint species distribution models with imperfect detection (Jeff)
++ 12:30--13:00 Multi-species occupancy models (Jeff)
++ 14:00--15:00 Joint species distribution models with imperfect detection (Jeff and exercise)
++ 15:00--15:30 Multi-species spatial occupancy models (Jeff)
++ 16:00--17:00 Multi-species spatial occupancy models (Jeff and exercise)
 + 17:00--17:30 Extra time for discussion, questions, etc.
 
 #### Wednesday 26 June 2024
