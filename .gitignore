@@ -3,5 +3,14 @@ flyer.pdf
 .Rproj.user
 .Rhistory
 code/4-solutions-spatial-european-goldfinch.R
+code/sim-spatial-multi-species-data.R
+code/hbef-spatial-multi-species-occ.R
 spatial-workshop-switzerland-24.pdf
+code/bat-data-prep.R
+data/wright2021.RData
+code/bbs-glmm-data-prep.R
+code/bbs-glmm-cov-data-prep.R
+code/bbs-glmm-pred-data-prep.R
+data/tmp-bbs-data-formatted.rda
+code/9a-solutions-spatial-glmm-birds.R
 *.swp
