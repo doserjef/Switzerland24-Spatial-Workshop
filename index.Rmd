@@ -83,7 +83,8 @@ The course will run from 9:00 to approximately 17:00-17:30, with lunch break fro
 #### Thursday 27 June 2024
 
 + 9:00--10:30 Spatial N-mixture models (Jeff and exercise)
-+ 11:00--13:00 Multi-species spatial N-mixture models (Jeff and exercise)
++ 11:00--11:30 Spatial N-mixture models (Jeff and exercise)
++ 11:30--13:00 Multi-species spatial N-mixture models (Jeff and exercise)
 + 14:00--15:30 Spatial hierarchical distance sampling models (Jeff and exercise)
 + 16:00--17:00 Multi-species spatial hierarchical distance sampling models (Jeff and exercise)
 + 17:00--17:30 Extra time for discussion, questions, etc.
@@ -94,4 +95,4 @@ The application period is closed.
 
 ## GitHub Code Repository
 
-All course lectures, code, and exercises can be found [here on the GitHub repository](https://github.com/doserjef/Switzerland24-Spatial-Workshop). Please note that materials are actively be added to the repository and they will not be finalized until immediately before the workshop begins (approx. 21 June or so), so we encourage you to hold off on downloading the course materials until then. 
+All course lectures, code, and exercises can be found [here on the GitHub repository](https://github.com/doserjef/Switzerland24-Spatial-Workshop). 

@@ -1,0 +1,102 @@
+Dataset title:  Hubbard Brook Experimental Forest Watershed Boundaries: GIS Shapefile
+
+Dataset ID:  Dataset Creator
+
+	Name:		John Campbell
+	Organization:	USDA Forest Service
+	
+	Address:
+			PO Box 640
+			Durham, NH 03824  USA
+	
+	Phone:		(603)-868-7643
+
+
+Dataset Abstract
+
+	Diazo copy of Hubbard Brook Watershed Map generated stereophoto- grammetrically
+                based on May, 1956 aerial photography. Shows New Hampshire state plane coordinate
+                system reference points which were projected into UTM Zone 19 and used as reference
+                tics. The watersheds boundaries were delineated on a paper diazo copy of the Hubbard
+                Brook Watershed Map supplied by Wayne Martin and manually digitized. Data distributed as shapefile in 
+                Coordinate system EPSG:26919 - NAD83 / UTM zone 19N
+
+
+Dataset Keywords
+
+	watersheds
+	hydrology
+	US Forest Service
+	streams
+	Hubbard Brook
+	New Hampshire
+	HBR
+	Hubbard Brook LTER
+
+
+Intellectual Rights
+
+
+
+Distribution
+
+	Online distribution:  http://www.hubbardbrook.org/gis
+
+
+Geographic Coverage
+
+
+	Bounding Coordinates
+
+		Geographic description:	Hubbard Brook
+		West bounding coordinate:	-71.805407
+		East bounding coordinate:	-71.686301
+		North bounding coordinate:	43.964402
+		South bounding coordinate:	43.914744
+	
+
+
+
+Temporal Coverage
+
+
+
+Dataset Contact
+
+	Position:	Information Manager
+	Organization:	LTER Network Office
+	
+	Address:
+			UNM Biology Department, MSC03-2020
+			1 University of New Mexico
+			Albuquerque, NM 87131-0001  USA
+	
+	Phone:		505 277-2535
+	Fax:		505 277-2541
+	Email:		tech-support@lternet.edu
+	URL:		http://www.lternet.edu
+
+
+Methods
+
+
+
+	Method Step 
+
+		Description 
+
+			B
+
+
+		Citation
+
+			1956-05-01. Hubbard Brook Watershed Boundaries. 
+
+
+	Method Step 
+
+		Description 
+
+			Cornell Laboratory for Environmental Applications of Remote Sensing
+                        (CLEARS) digitized the Forest Service Map. The lines were digitized on a Calcomp 9500 series plotter set at
+                        1000 ppi and registered with an RMS less than or equal to .003.

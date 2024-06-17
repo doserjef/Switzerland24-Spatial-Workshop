@@ -1,0 +1,5 @@
+Manifest file for knb-lter-hbr.94.2-4c9184f37cff01bcdc32dc486ec36961.zip created on Wed May 20 14:07:59 MDT 2020
+hbef_wsheds.zip (66302 bytes)
+knb-lter-hbr.94.2.xml (13572 bytes)
+knb-lter-hbr.94.2.txt (2167 bytes)
+knb-lter-hbr.94.2.report.xml (16646 bytes)

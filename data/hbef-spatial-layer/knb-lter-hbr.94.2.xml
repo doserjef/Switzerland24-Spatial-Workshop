@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-hbr.94.2" scope="system"
+  system="https://pasta.lternet.edu"
+  xmlns:eml="eml://ecoinformatics.org/eml-2.1.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.0     http://nis.lternet.edu/schemas/EML/eml-2.1.0/eml.xsd      http://www.xml-cml.org/schema/stmml-1.1     http://nis.lternet.edu/schemas/EML/eml-2.1.0/stmml.xsd ">
+  <access authSystem="https://pasta.lternet.edu/authentication"
+    order="allowFirst" scope="document" system="https://pasta.lternet.edu">
+    <allow>
+      <principal>uid=HBR,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <shortName>hbef_wsheds</shortName>
+    <title>Hubbard Brook Experimental Forest Watershed Boundaries: GIS Shapefile</title>
+    <creator>
+      <individualName>
+        <givenName>John</givenName>
+        <surName>Campbell</surName>
+      </individualName>
+      <organizationName>USDA Forest Service</organizationName>
+      <address>
+        <deliveryPoint>PO Box 640</deliveryPoint>
+        <city>Durham</city>
+        <administrativeArea>NH</administrativeArea>
+        <postalCode>03824</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(603)-868-7643</phone>
+    </creator>
+    <pubDate>2016</pubDate>
+    <abstract>
+      <para>Diazo copy of Hubbard Brook Watershed Map generated stereophoto- grammetrically
+                based on May, 1956 aerial photography. Shows New Hampshire state plane coordinate
+                system reference points which were projected into UTM Zone 19 and used as reference
+                tics. The watersheds boundaries were delineated on a paper diazo copy of the Hubbard
+                Brook Watershed Map supplied by Wayne Martin and manually digitized. Data distributed as shapefile in 
+                Coordinate system EPSG:26919 - NAD83 / UTM zone 19N</para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">watersheds</keyword>
+      <keyword keywordType="theme">hydrology</keyword>
+      <keyword keywordType="theme">US Forest Service</keyword>
+      <keyword keywordType="theme">streams</keyword>
+      <keyword keywordType="place">Hubbard Brook</keyword>
+      <keyword keywordType="place">New Hampshire</keyword>
+      <keyword keywordType="place">HBR</keyword>
+      <keyword keywordType="place">Hubbard Brook LTER</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <section>
+        <title>Data Use Policy</title>
+        <para>
+          <itemizedlist>
+            <listitem>
+              <para>
+                        The re-use of scientific data has the potential to greatly
+                        increase communication, collaboration and synthesis within and among
+                        disciplines, and thus is fostered, supported and encouraged. Permission to
+                        use this dataset is granted to the Data User free of charge subject to the
+                        following terms:
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        1) Acceptable use. Use of the dataset will be restricted to academic, research,
+                        government or other not-for-profit professional purposes. 
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        2) Redistribution. The data and metadata are provided for use by the Data User.
+                        The Data User will not redistribute the original Data Set or metadata to
+                        others without the explicit permission of the Principal Investigator.
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        3) Citation. It is considered a matter of professional ethics to acknowledge the work
+                        of other scientists. Thus, the Data User will properly attribute
+                        the Data Set in any publications or in the metadata of any derived data products
+                        that were produced using the Data Set. Citation should take the
+                        following general form: Creator, Year of Data Publication, Title of Dataset,
+                        Publisher, Dataset identifier.
+                    </para>
+              <para>
+                        Citation example: Holmes, R.T. 2012. Bird Abundances at Hubbard Brook (1969-2010)
+                        and on three replicate plots (1986-2000) in the White Mountain
+                        National Forest. Durham, NH. Hubbard Brook Data Archive [Database].
+                        http://hubbardbrook.org/data/dataset.php?id=81 (23 July 2012)
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        4) Acknowledgment: The Data User should acknowledge any institutional support or specific
+                        funding awards referenced in the metadata accompanying this
+                        dataset in any publications where the Data Set contributed to its content. Acknowledgments
+                        should identify the supporting party, the party that received
+                        the support, and any identifying information such as grant numbers.
+                    </para>
+              <para>
+                        Acknowledgment example: Data on [topic] were provided by [name of PI] on [date].
+                        These data were gathered as part of the Hubbard Brook Ecosystem
+                        Study (HBES). The HBES is a collaborative effort at the Hubbard Brook Experimental Forest,
+                        which is operated and maintained by the USDA Forest Service,
+                        Northern Research Station, Newtown Square, PA. Significant funding for collection of these
+                        data was provided by [agency]-[grant number], [agency]-[grant
+                        number], etc.
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        5) Consultation and questions. Data users are strongly encouraged to consult with the Principal
+                        Investigator(s) who collected these data for further information. Also, when appropriate,
+                        Data Users should consider including the Principal Investigator as a collaborator and/or co-author 
+                        in the use of these data.
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        6) Notification. The Data User will notify the Principal Investigator of any publication or
+                        derivative work based on the Data Set. The Data User will
+                        also provide the Principal Investigator and/or the administrator of the Hubbard Brook
+                        Ecosystem Study with a pdf or two reprints of any publication(s)
+                        resulting from use of the Data Set.
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        7) Disclaimer. While substantial efforts are made to ensure the accuracy of data
+                        and documentation contained in this Data Set, complete accuracy of data and
+                        metadata cannot be guaranteed. All data and metadata are made available "as
+                        is". The Data User holds all parties involved in the production or
+                        distribution of the Data Set harmless for damages resulting from its use or
+                        interpretation.
+                    </para>
+            </listitem>
+            <listitem>
+              <para>
+                        8) Terms of Agreement. By accepting this Data Set, the Data User agrees to abide by the
+                        terms of this agreement. The Data Owner shall have the right to terminate
+                        this agreement immediately by written notice upon the Data User's breach of,
+                        or non-compliance with, any of its terms. The Data User may be held
+                        responsible for any misuse that is caused or encouraged by the Data User's
+                        failure to abide by the terms of this agreement.
+                    </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </section>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url>http://www.hubbardbrook.org/gis</url>
+      </online>
+    </distribution>
+    <coverage>
+      <temporalCoverage>
+        <singleDateTime>
+          <calendarDate>1956-05-01</calendarDate>
+        </singleDateTime>
+      </temporalCoverage>
+      <geographicCoverage>
+        <geographicDescription>Hubbard Brook</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-71.805407</westBoundingCoordinate>
+          <eastBoundingCoordinate>-71.686301</eastBoundingCoordinate>
+          <northBoundingCoordinate>43.964402</northBoundingCoordinate>
+          <southBoundingCoordinate>43.914744</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+    </coverage>
+    <contact>
+      <positionName>Information Manager</positionName>
+      <organizationName>LTER Network Office</organizationName>
+      <address>
+        <deliveryPoint>UNM Biology Department, MSC03-2020</deliveryPoint>
+        <deliveryPoint>1 University of New Mexico</deliveryPoint>
+        <city>Albuquerque</city>
+        <administrativeArea>NM</administrativeArea>
+        <postalCode>87131-0001</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">505 277-2535</phone>
+      <phone phonetype="fax">505 277-2541</phone>
+      <electronicMailAddress>tech-support@lternet.edu</electronicMailAddress>
+      <onlineUrl>http://www.lternet.edu</onlineUrl>
+    </contact>
+    <contact>
+      <positionName>Information Manager, Hubbard Brook LTER</positionName>
+      <address>
+        <deliveryPoint>234 Mirror Lake Road</deliveryPoint>
+        <city>North Woodstock</city>
+        <administrativeArea>NH</administrativeArea>
+        <postalCode>03262</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(603) 726-8902</phone>
+      <electronicMailAddress>hbr-im@lternet.edu</electronicMailAddress>
+      <onlineUrl>http://www.hubbardbrook.org</onlineUrl>
+    </contact>
+    <publisher id="HBR-LTER">
+      <organizationName>USDA Forest Service</organizationName>
+      <address>
+        <deliveryPoint>Northeastern Research Station</deliveryPoint>
+        <deliveryPoint>USDA Forest Service</deliveryPoint>
+        <deliveryPoint>PO Box 640</deliveryPoint>
+        <city>Durham</city>
+        <administrativeArea>NH</administrativeArea>
+        <postalCode>03801</postalCode>
+        <country>USA</country>
+      </address>
+      <phone phonetype="voice">(603) 868-7643</phone>
+      <phone phonetype="fax">(603) 868-7604</phone>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <para>B</para>
+        </description>
+        <citation>
+          <title>Hubbard Brook Watershed Boundaries</title>
+          <creator>
+            <organizationName>USDA Forest Service</organizationName>
+          </creator>
+          <pubDate>1956-05-01</pubDate>
+          <map>
+            <scale>7920</scale>
+          </map>
+        </citation>
+      </methodStep>
+      <methodStep>
+        <description>
+          <para>Cornell Laboratory for Environmental Applications of Remote Sensing
+                        (CLEARS) digitized the Forest Service Map. The lines were digitized on a Calcomp 9500 series plotter set at
+                        1000 ppi and registered with an RMS less than or equal to .003.</para>
+        </description>
+        <dataSource>
+          <title>Hubbard Brook Watershed Boundaries</title>
+          <creator>
+            <organizationName>Cornell Laboratory for Environmental Applications of
+                            Remote Sensing (CLEARS)</organizationName>
+          </creator>
+          <pubDate>1991-04-25</pubDate>
+          <additionalInfo>
+            <para>vector digital data</para>
+          </additionalInfo>
+          <contact>
+            <organizationName>Cornell Laboratory for Environmental Applications of
+                            Remote Sensing (CLEARS)</organizationName>
+          </contact>
+        </dataSource>
+      </methodStep>
+    </methods>
+    <otherEntity>
+      <entityName>hbef_wsheds.zip</entityName>
+      <entityDescription>Hubbard Brook Experimental Forest Watersheds</entityDescription>
+      <physical>
+        <objectName>hbef_wsheds.zip</objectName>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>.zip file</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url>https://pasta.lternet.edu/package/data/eml/knb-lter-hbr/94/2/41e789f7aca11dff5c0da2f1780b3084</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>compressed data file</entityType>
+    </otherEntity>
+  </dataset>
+</eml:eml>

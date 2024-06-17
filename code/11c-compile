@@ -1,0 +1,3 @@
+R CMD BATCH --no-save '--args 1' 11b-hbef-main-sfMsNMix.R chain-1.out &
+R CMD BATCH --no-save '--args 2' 11b-hbef-main-sfMsNMix.R chain-2.out &
+R CMD BATCH --no-save '--args 3' 11b-hbef-main-sfMsNMix.R chain-3.out &

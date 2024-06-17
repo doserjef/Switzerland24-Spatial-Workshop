@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qr:qualityReport
+  xmlns="eml://ecoinformatics.org/qualityReport"
+  xmlns:qr="eml://ecoinformatics.org/qualityReport"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="eml://ecoinformatics.org/qualityReport http://svn.lternet.edu/svn/NIS/documents/schemas/quality/qualityReportSchema.xsd"
+  >
+  <creationDate>2016-02-17T11:43:13</creationDate>
+  <packageId>knb-lter-hbr.94.2</packageId>
+  <includeSystem>lter</includeSystem>
+  <includeSystem>knb</includeSystem>
+  <datasetReport>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>packageIdPattern</identifier>
+      <name>packageId pattern matches "scope.identifier.revision"</name>
+      <description>Check against LTER requirements for scope.identifier.revision</description>
+      <expected>'scope.n.m', where 'n' and 'm' are integers and 'scope' is one of an allowed set of values</expected>
+      <found>knb-lter-hbr.94.2</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>emlVersion</identifier>
+      <name>EML version 2.1.0 or beyond</name>
+      <description>Check the EML document declaration for version 2.1.0 or higher</description>
+      <expected>eml://ecoinformatics.org/eml-2.1.0 or eml://ecoinformatics.org/eml-2.1.1</expected>
+      <found>eml://ecoinformatics.org/eml-2.1.0</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>schemaValid</identifier>
+      <name>Document is schema-valid EML</name>
+      <description>Check document schema validity</description>
+      <expected>schema-valid</expected>
+      <found>Document validated for namespace: 'eml://ecoinformatics.org/eml-2.1.0'</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>parserValid</identifier>
+      <name>Document is EML parser-valid</name>
+      <description>Check document using the EML IDs and references parser</description>
+      <expected>Validates with the EML IDs and references parser</expected>
+      <found>EML IDs and references parser succeeded</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>schemaValidDereferenced</identifier>
+      <name>Dereferenced document is schema-valid EML</name>
+      <description>References are dereferenced, and the resulting file validated</description>
+      <expected>schema-valid</expected>
+      <found>Dereferenced document validated for namespace: 'eml://ecoinformatics.org/eml-2.1.0'</found>
+      <status>valid</status>
+      <explanation>Validity of this quality report is dependent on this check being valid.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>keywordPresent</identifier>
+      <name>keyword element is present</name>
+      <description>Checks to see if at least one keyword is present</description>
+      <expected>Presence of one or more keyword elements</expected>
+      <found>8 'keyword' element(s) found</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>methodsElementPresent</identifier>
+      <name>A 'methods' element is present</name>
+      <description>All datasets should contain a 'methods' element, at a minimum a link to a separate methods doc.</description>
+      <expected>presence of 'methods' at one or more xpaths.</expected>
+      <found>1 'methods' element(s) found</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices, p. 28</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>coveragePresent</identifier>
+      <name>coverage element is present</name>
+      <description>At least one coverage element should be present in a dataset.</description>
+      <expected>At least one of geographicCoverage, taxonomicCoverage, or temporalCoverage is present in the EML.</expected>
+      <found>1 'coverage' element(s) found</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="info" >
+      <identifier>geographicCoveragePresent</identifier>
+      <name>geographicCoverage is present</name>
+      <description>Check that geographicCoverage exists in EML at the dataset level, or at least one entity's level, or at least one attribute's level.</description>
+      <expected>geographicCoverage at least at the dataset level.</expected>
+      <found>1 'geographicCoverage' element(s) found</found>
+      <status>info</status>
+      <explanation>Many but not all datasets are appropriate to have spatial coverage.</explanation>
+      <suggestion>If sampling EML is used within methods, does that obviate geographicCoverage? Or should those sites be repeated or referenced?</suggestion>
+      <reference>EML Best Practices v.2, p. 22-23. "One geographicCoverage element should be included, whose boundingCoordinates describe the extent of the data....Additional geographicCoverage elements may be entered at the dataset level if there are significant distances between study sites and it would be confusing if they were grouped into one bounding box." 6 decimal places.</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="info" >
+      <identifier>taxonomicCoveragePresent</identifier>
+      <name>taxonomicCoverage is present</name>
+      <description>Check that taxonomicCoverage exists in EML at the dataset level, or at least one entity's level, or at least one attribute's level.</description>
+      <expected>taxonomicCoverage at least at the dataset level.</expected>
+      <found>0 'taxonomicCoverage' element(s) found</found>
+      <status>info</status>
+      <explanation>Only when taxa are pertinent to the dataset will they have taxonomicCoverage.</explanation>
+      <suggestion>Could search title, abstract, keywords for any taxonomic name (huge). Could search keywordType="taxonomic".</suggestion>
+      <reference>EML Best Practices v.2, p. 25</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="info" >
+      <identifier>temporalCoveragePresent</identifier>
+      <name>temporalCoverage is present</name>
+      <description>Check that temporalCoverage exists in EML at the dataset level, or at least one entity's level, or at least one attribute's level.</description>
+      <expected>temporalCoverage at least at the dataset level.</expected>
+      <found>1 'temporalCoverage' element(s) found</found>
+      <status>info</status>
+      <explanation>LTER wants to search datasets by time; the best place to search is the dataset level temporal coverage.</explanation>
+      <suggestion>Most datasets have a temporal range.</suggestion>
+      <reference>EML Best Practices v.2, p. 24</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>titleLength</identifier>
+      <name>Dataset title length is at 5 least words.</name>
+      <description>If the title is shorter than 5 words, it might be insufficient. Title word count between 7 and 20 including prepositions and numbers.</description>
+      <expected>Between 7 and 20 words</expected>
+      <found>8 words found.</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices, v.2, p. 13</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>pubDatePresent</identifier>
+      <name>'pubDate' element is present</name>
+      <description>Check for presence of the pubDate element</description>
+      <expected>The date that the dataset was submitted for publication in PASTA must be included.
+            (The EML schema does not require this element, but when present, it does constrain its
+            format to YYYY-MM-DD or just YYYY. Citation format uses only the YYYY portion even if a
+            full date is entered.)  
+      </expected>
+      <found>2016</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices v.2, p. 17</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>datasetAbstractLength</identifier>
+      <name>Dataset abstract element is a minimum of 20 words</name>
+      <description>Check the length of a dataset abstract and warn if less than 20 words.</description>
+      <expected>An abstract is 20 words or more.</expected>
+      <found>62 words found.</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>EML Best Practices</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="error" >
+      <identifier>duplicateEntityName</identifier>
+      <name>There are no duplicate entity names</name>
+      <description>Checks that content is not duplicated by other entityName elements in the document</description>
+      <expected>entityName is not a duplicate within the document</expected>
+      <found>No duplicates found</found>
+      <status>valid</status>
+      <explanation>Data Manager requires a non-empty, non-duplicate entityName value for every entity</explanation>
+      <suggestion>Declare a non-empty entityName and ensure that there are no duplicate entityName values in the document</suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-dataTable.html#numberOfRecords</reference>
+    </qualityCheck>
+  </datasetReport>
+  <entityReport>
+    <entityName>hbef_wsheds.zip</entityName>
+    <qualityCheck qualityType="metadata" system="knb" statusType="warn" >
+      <identifier>entityNameLength</identifier>
+      <name>Length of entityName is not excessive (less than 100 char)</name>
+      <description>length of entity name is less than 100 characters</description>
+      <expected>entityName value is 100 characters or less</expected>
+      <found>15</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="lter" statusType="warn" >
+      <identifier>entityDescriptionPresent</identifier>
+      <name>An entity description is present</name>
+      <description>Check for presence of an entity description.</description>
+      <expected>EML Best practices pp. 32-33, "...should have enough information for a user..."</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation>With entityName sometimes serving as a file name rather than a title, it is important to be very descriptive here.</explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="info" >
+      <identifier>numHeaderLinesPresent</identifier>
+      <name>'numHeaderLines' element is present</name>
+      <description>Check for presence of the 'numHeaderLines' element.</description>
+      <expected>Document contains 'numHeaderLines' element.</expected>
+      <found>No 'numHeaderLines' element found</found>
+      <status>info</status>
+      <explanation>If data file contains header lines, 'numHeaderLines' must be specified.</explanation>
+      <suggestion>Add 'numHeaderLines' element if needed.</suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="info" >
+      <identifier>numFooterLinesPresent</identifier>
+      <name>'numFooterLines' element is present</name>
+      <description>Check for presence of the 'numFooterLines' element.</description>
+      <expected>Document contains 'numFooterLines' element.</expected>
+      <found>No 'numFooterLines' element found</found>
+      <status>info</status>
+      <explanation>If data file contains footer lines, 'numFooterLines' must be specified.</explanation>
+      <suggestion>Add 'numFooterLines' element if needed.</suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="error" >
+      <identifier>fieldDelimiterValid</identifier>
+      <name>Field delimiter is a single character</name>
+      <description>Field delimiters should be one character only</description>
+      <expected>A single character is expected</expected>
+      <found>null</found>
+      <status>info</status>
+      <explanation>A fieldDelimiter value is not checked for binary entities or entities with an externally defined format</explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#fieldDelimiter</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="metadata" system="knb" statusType="warn" >
+      <identifier>recordDelimiterPresent</identifier>
+      <name>Record delimiter is present</name>
+      <description>Check presence of record delimiter. Check that the record delimiter is one of the suggested values.</description>
+      <expected>A record delimiter from a list of suggested values: \n, \r, \r\n, #x0A, #x0D, #x0D#x0A</expected>
+      <found>null</found>
+      <status>info</status>
+      <explanation>A recordDelimiter value is not checked for binary entities or entities with an externally defined format</explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-physical.html#recordDelimiter</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="data" system="knb" statusType="info" >
+      <identifier>displayDownloadData</identifier>
+      <name>Display downloaded data</name>
+      <description>Display the first kilobyte of data that is downloaded</description>
+      <expected>Up to one kilobyte of data should be displayed</expected>
+      <found>*** BINARY DATA ***</found>
+      <status>info</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="error" >
+      <identifier>urlReturnsData</identifier>
+      <name>URL returns data</name>
+      <description>Checks whether a URL returns data. Unless the URL is specified to be function="information", the URL should return the resource for download.</description>
+      <expected>A data entity that matches the metadata</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation></explanation>
+      <suggestion></suggestion>
+      <reference>http://knb.ecoinformatics.org/software/eml/eml-2.1.0/eml-resource.html#UrlType</reference>
+    </qualityCheck>
+    <qualityCheck qualityType="congruency" system="knb" statusType="error" >
+      <identifier>onlineURLs</identifier>
+      <name>Online URLs are live</name>
+      <description>Check that online URLs return something</description>
+      <expected>true</expected>
+      <found>true</found>
+      <status>valid</status>
+      <explanation>Succeeded in accessing URL: <![CDATA[http://hubbardbrook.org/gis/giszip/hbef_wsheds.zip]]></explanation>
+      <suggestion></suggestion>
+      <reference></reference>
+    </qualityCheck>
+  </entityReport>
+</qr:qualityReport>
