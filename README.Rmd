@@ -64,7 +64,7 @@ Contains the R scripts (and associated files) for all exercises throughout the w
 
 ### [lectures](./lectures)
 
-Contains the lectures used throughout the workshop. The number at the beginning of the file names of the scripts is the same number for the corresponding lecture material that is available in the [lectures](./lectures) directory. *Note: the final two lectures are not yet uploaded but will be completed by June 21, 2024.*
+Contains the lectures used throughout the workshop. The number at the beginning of the file names of the scripts is the same number for the corresponding lecture material that is available in the [lectures](./lectures) directory. 
 
 + `01-occupancy.pdf`: introduction to occupancy modeling, the `spOccupancy` package, and a very short introduction to Bayesian Markov chain Monte Carlo (MCMC) methods.
 + `02-intro-to-spatial-models.pdf`: introduction to spatial modelling and classical geostatistics concepts.
@@ -77,7 +77,7 @@ Contains the lectures used throughout the workshop. The number at the beginning 
 + `09-spatial-glmms.pdf`: lecture on the use of spatial generalized linear mixed models for relative abundance estimation and prediction using `spAbundance`.
 + `10-spatial-nmix.pdf`: lecture discussing spatial N-mixture models for abundance estimation. This lecture also includes a brief discussion of posterior predictive checks and WAIC. We also focus pretty intensely on the difficulties that spatial N-mixture models can present in practice.
 + `11-spatial-multi-species-nmix.R`: a brief lecture discussing the three multi-species N-mixture model types (regular, latent factor, spatial factor) that can currently be fit in `spAbundance`.
-+ `12-hierarchical-distance-sampling.pdf`: **to be added shortly**. Lecture providing a brief overview of hierarchical distance sampling for abundance/density estimation, including both nonspatial and spatial forms.
++ `12-hierarchical-distance-sampling.pdf`: lecture providing a brief overview of hierarchical distance sampling for abundance/density estimation, including both nonspatial and spatial forms.
 + `13-multi-species-HDS.pdf`: a brief lecture discussing the three multi-species HDS model types (regular, latent factor, spatial factor) that can currently be fit in `spAbundance`.
 
 ### [data](./data)

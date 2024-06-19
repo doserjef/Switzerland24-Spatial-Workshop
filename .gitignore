@@ -21,6 +21,7 @@ code/get-issj-data.R
 code/get-swiss-mhb-abundance-data.R
 code/sim-spatial-nmix-data.R
 code/spatial-decay-figure.R
+code/detection-function-figure.R
 data/wright2021.RData
 data/tmp-bbs-data-formatted.rda
 data/montano-centellas-data/

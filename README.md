@@ -174,8 +174,7 @@ that is available in the [lectures](./lectures) directory.
 Contains the lectures used throughout the workshop. The number at the
 beginning of the file names of the scripts is the same number for the
 corresponding lecture material that is available in the
-[lectures](./lectures) directory. *Note: the final two lectures are not
-yet uploaded but will be completed by June 21, 2024.*
+[lectures](./lectures) directory.
 
 - `01-occupancy.pdf`: introduction to occupancy modeling, the
   `spOccupancy` package, and a very short introduction to Bayesian
@@ -216,10 +215,9 @@ yet uploaded but will be completed by June 21, 2024.*
 - `11-spatial-multi-species-nmix.R`: a brief lecture discussing the
   three multi-species N-mixture model types (regular, latent factor,
   spatial factor) that can currently be fit in `spAbundance`.
-- `12-hierarchical-distance-sampling.pdf`: **to be added shortly**.
-  Lecture providing a brief overview of hierarchical distance sampling
-  for abundance/density estimation, including both nonspatial and
-  spatial forms.
+- `12-hierarchical-distance-sampling.pdf`: lecture providing a brief
+  overview of hierarchical distance sampling for abundance/density
+  estimation, including both nonspatial and spatial forms.
 - `13-multi-species-HDS.pdf`: a brief lecture discussing the three
   multi-species HDS model types (regular, latent factor, spatial factor)
   that can currently be fit in `spAbundance`.
