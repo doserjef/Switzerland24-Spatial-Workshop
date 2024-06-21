@@ -74,43 +74,43 @@ for(i in 1:length(psi)){
   for(j in 1:length(p)){
     for(s in 1:nsims){
       cat(paste('\n*** Doing simulation ', s, ' with psi=', psi[i], ' and p=', p[j], ' ***', sep=''))
-      
+
       # simulate data (same for all sampling designs)
       simdata <- simOcc(J.x=50, J.y=20, n.rep=rep(10, 50*20),
                         beta=c(qlogis(psi[i]), # occupancy intercept
                                -0.4),
                         alpha=c(qlogis(p[j]),  # detection intercept
                                 0.6))
-      
+
       for(k in 1:length(nvisits)){
-        
+
         # sample from the simulated data according to the sampling design
         nsites <- round(total.surveys/nvisits[k],0)
         index <- sample(1:1000, nsites)
         data.list <- list(y=simdata$y[index, 1:nvisits[k]],
                           occ.covs=data.frame(forest=simdata$X[index,2]),
                           det.covs=list(temperature=simdata$X.p[index,1:nvisits[k],2]))
-        
+
         # fit model
         out <- PGOcc(occ.formula = ~ forest,
                      det.formula = ~ temperature,
                      data=data.list,
                      n.samples=1500, n.thin=2, n.burn=500, n.chains=3, verbose=FALSE)
-        
+
         # save estimated standard error of occupancy estimate
         results[i,j,k,s] <- sd(out$beta.samples[,1])
       }
     }
   }
 }
-# saveRDS(results, file='Occupancy_model_survey_design_simulation.rds')
+# saveRDS(results, file='results/occupancy-model-survey-design-simulation.rds')
 
 # visualize results
-results <- readRDS('Occupancy_model_survey_design_simulation.rds')
+results <- readRDS('results/occupancy-model-survey-design-simulation.rds')
 dimnames(results)
 dimnames(results) <- list(psi, p, nvisits, NULL)
-results.df <- array2DF(results) %>% 
-  rename_at(1:5, ~ c('psi', 'p', 'K', 'sim', 'SEpsi')) %>% 
+results.df <- array2DF(results) %>%
+  rename_at(1:5, ~ c('psi', 'p', 'K', 'sim', 'SEpsi')) %>%
   mutate(across(K, as.numeric))
 head(results.df)
 

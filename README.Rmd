@@ -45,7 +45,7 @@ Contains the R scripts (and associated files) for all exercises throughout the w
 + `03b-nngp-sim-example.R`: this script fits a spatial occupancy model using a Nearest Neighbor Gaussian Process with a simulated data set for direct comparison with a spatial occupancy model that uses a full GP. Similar to `03a-gp-sim-example.R`, we will not run this script during the workshop, but it is availailable to see how an example discussed in lecture is generated.
 + `03c-summary-sim-example.R`: script to summarize the simulation results from `03a-gp-sim-example.R` and `03b-gp-sim-example.R` and generate a plot to compare the NNGP model results to the full GP model results.
 + `04a-spatial-european-goldfinch-ex.R`: this script builds on `01-swiss-european-goldfinch.R` by extending our occupancy model to a spatial occupancy model that is used to predict the distribution of the European goldfinch across Switzerland.
-+ `04b-rock-buntings-occ.R`: **will be added shortly**. A script providing a detailed work through of fitting spatial occupancy models in `spOccupancy` to predict the distribution of rock buntings in Ticino. 
++ `04b-rock-buntings-occ.R`: *will be added shortly*. A script providing a detailed work through of fitting spatial occupancy models in `spOccupancy` to predict the distribution of rock buntings in Ticino. 
 + `05-occupancy-model-survey-design-simulation.R`: this script shows how to assess the number of sites/visits in single-season occupancy model analyses using simulated data.
 + `06-amphibian-multi-species-occ.R`: this script showcases how to fit multi-species occupancy models in spOccupancy. Here we focus on a community of tropical amphibians and how their occupancy relates to agriculture and topography. These data come from Ribeiro Jr. et al. (2018) *Ecological Applications*. We fit a standard multi-species occupancy model as well as a multi-species occupancy model that accounts for residual correlations between species in a joint species distribution modelling framework.
 + `07-plant-spatial-multi-species-occ.R`: this script shows how to fit a multi-species spatial factor occupancy model to a simulated data set of 10 plant species. The objective here is to explore the contribution of elevation as a niche partitioning mechanism.
@@ -68,7 +68,7 @@ Contains the R scripts (and associated files) for all exercises throughout the w
 
 Contains the lectures used throughout the workshop. The number at the beginning of the file names of the scripts is the same number for the corresponding lecture material that is available in the [lectures](./lectures) directory. 
 
-+ `01a-intro-to-hms.pdf`: **will be added shortly** a broad introduction to hierarchical modelling and its use in population and community ecology.
++ `01a-intro-to-hms.pdf`: *will be added shortly* a broad introduction to hierarchical modelling and its use in population and community ecology.
 + `01b-occupancy.pdf`: introduction to occupancy modelling, the `spOccupancy` package, and a very short introduction to Bayesian Markov chain Monte Carlo (MCMC) methods.
 + `02-intro-to-spatial-models.pdf`: introduction to spatial modelling and classical geostatistics concepts.
 + `03-big-spatial.pdf`: discussion of the computational challenges that big spatial data present, approaches to mitigate the effects, and details on the Nearest Neighbor Gaussian Process (NNGP) approach used in `spOccupancy` and `spAbundance` to make such models more efficient.
