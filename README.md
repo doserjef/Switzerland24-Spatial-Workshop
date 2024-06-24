@@ -9,6 +9,8 @@
 
 ### [Workshop Schedule and Overview](https://doserjef.github.io/Switzerland24-Spatial-Workshop/)
 
+### [spOccupancy website](https://www.jeffdoser.com/files/spoccupancy-web/) and [spAbundance website](https://www.jeffdoser.com/files/spabundance-web/)
+
 ------------------------------------------------------------------------
 
 ## Software installation
