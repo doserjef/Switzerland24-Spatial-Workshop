@@ -139,6 +139,8 @@ resids.vario.plot <- ggplot(data = plot.df, aes(x = distance, y = resids)) +
   labs(x = "Distance", y = 'Semivariance for Residuals')
 dbh.vario.plot + resids.vario.plot
 
+
+dist.mat <- dist(wef.data.list$coords)
 # Fit a spatial linear model ----------------------------------------------
 # Set priors and initial values for the two spatial parameters.
 # NOTE: here we change the default priors for the two spatial parameters.

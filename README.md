@@ -53,6 +53,10 @@ throughout the workshop. The number at the beginning of the file names
 of the scripts is the same number for the corresponding lecture material
 that is available in the [lectures](./lectures) directory.
 
+- `00a-intro-hm.R`: code for introduction to hierarchical models in
+  ecology.
+- `00b-trend-example-simNpC2.R`: an example of how ignoring detection
+  probability can lead to bias in trend estimates.
 - `01-swiss-european-goldfinch.R`: fits a single-species occupancy model
   using data on the European goldfinch from the Switzerland Breeding
   Bird Survey (Swiss MHB) in 2014. This script also serves as our
@@ -83,9 +87,9 @@ that is available in the [lectures](./lectures) directory.
   `01-swiss-european-goldfinch.R` by extending our occupancy model to a
   spatial occupancy model that is used to predict the distribution of
   the European goldfinch across Switzerland.
-- `04b-rock-buntings-occ.R`: *will be added shortly*. A script providing
-  a detailed work through of fitting spatial occupancy models in
-  `spOccupancy` to predict the distribution of rock buntings in Ticino.
+- `04b-spOccupancy-ubms-rock-buntings.R`: A script providing a detailed
+  work through of fitting spatial occupancy models in `spOccupancy` to
+  predict the distribution of rock buntings in Ticino.
 - `05-occupancy-model-survey-design-simulation.R`: this script shows how
   to assess the number of sites/visits in single-season occupancy model
   analyses using simulated data.
@@ -184,10 +188,9 @@ beginning of the file names of the scripts is the same number for the
 corresponding lecture material that is available in the
 [lectures](./lectures) directory.
 
-- `01a-intro-to-hms.pdf`: *will be added shortly* a broad introduction
-  to hierarchical modelling and its use in population and community
-  ecology.
-- `01b-occupancy.pdf`: introduction to occupancy modelling, the
+- `00-intro-to-hms.pdf`: a broad introduction to hierarchical modelling
+  and its use in population and community ecology.
+- `01-occupancy.pdf`: introduction to occupancy modelling, the
   `spOccupancy` package, and a very short introduction to Bayesian
   Markov chain Monte Carlo (MCMC) methods.
 - `02-intro-to-spatial-models.pdf`: introduction to spatial modelling
@@ -196,10 +199,12 @@ corresponding lecture material that is available in the
   big spatial data present, approaches to mitigate the effects, and
   details on the Nearest Neighbor Gaussian Process (NNGP) approach used
   in `spOccupancy` and `spAbundance` to make such models more efficient.
-- `04-spatial-occupancy-models.pdf`: lecture on merging the spatial
+- `04a-spatial-occupancy-models.pdf`: lecture on merging the spatial
   techniques discussed in `02-intro-to-spatial-models.pdf` and the
   occupancy modelling approaches in `01-occupancy.pdf` to form spatial
   occupancy models.
+- `04b-spOccupancy-ubms-rock-buntings.pdf`: associated documentation for
+  the modelling of the rock bunting across southeastern Switzerland.
 - `05-occupancy-model-survey-design.pdf`: lecture discussing survey
   design for single-species occupancy models.
 - `06-multi-species-occupancy.pdf`: lecture on non-spatial multi-species

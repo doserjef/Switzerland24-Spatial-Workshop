@@ -44,6 +44,7 @@ out.elev <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2),
                   n.burn = 3000,
                   n.chains = 3,
                   n.report = 500)
+# total samples per chain saved = (n.samples - n.burn) / n.thin
 summary(out.elev)
 
 # Notice the default priors and initial values specified in the
@@ -51,6 +52,11 @@ summary(out.elev)
 # now explicitly specify the priors and initial values
 prior.list <- list(beta.normal = list(mean = 0, var = 2.72),
                    alpha.normal = list(mean = 0, var = 2.72))
+# Alternatively, you can explicitly specify a different prior for each variable on 
+# occupancy and/or detection using the following approach.
+# prior.list <- list(beta.normal = list(mean = c(0, 0, 0), var = c(2.72, 2.72, 2.72)),
+#                    alpha.normal = list(mean = c(0, 0, 0, 0), 
+#                                        var = c(2.72, 2.72, 2.72, 2.72)))
 inits.list <- list(beta = 0, alpha = 0,
                    z = apply(data.goldfinch$y, 1, max, na.rm = TRUE))
 out.elev.2 <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2),
@@ -71,7 +77,7 @@ out.full <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) + sca
                   data = data.goldfinch,
                   n.samples = 5000,
                   inits = inits.list,
-                  priors = prior.list,
+                  # priors = prior.list,
                   n.thin = 4,
                   n.burn = 3000,
                   n.chains = 3,
