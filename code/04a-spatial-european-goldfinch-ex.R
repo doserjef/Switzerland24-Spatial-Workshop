@@ -63,7 +63,7 @@ plot(data.goldfinch$coords, pch = 19)
 
 # TODO 4.3 ----------------------------------------------------------------
 # Refit the same model as before, but now manually specify the prior on phi to
-# have an effective spatial range that falls between 10,000 and the maximum
+# have an effective spatial range that falls between 20,000 and the maximum
 # distance between two sites in the data set. Recall that the effective spatial
 # range when using the exponential covariance function is 3 / phi. Save the
 # model as out.sp.2.

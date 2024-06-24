@@ -37,7 +37,7 @@ plot(data.goldfinch$coords, pch = 19)
 # Fit a non-spatial, single-species occupancy model
 # Only include linear and quadratic effects of elevation
 out.elev <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2),
-                  det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                  det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                   data = data.goldfinch,
                   n.samples = 5000,
                   n.thin = 4,
@@ -54,7 +54,7 @@ prior.list <- list(beta.normal = list(mean = 0, var = 2.72),
 inits.list <- list(beta = 0, alpha = 0,
                    z = apply(data.goldfinch$y, 1, max, na.rm = TRUE))
 out.elev.2 <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2),
-                    det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                    det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                     data = data.goldfinch,
                     n.samples = 5000,
                     inits = inits.list,
@@ -67,7 +67,7 @@ summary(out.elev.2)
 
 # Now fit a model that also includes forest cover
 out.full <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) + scale(forest),
-                  det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                  det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                   data = data.goldfinch,
                   n.samples = 5000,
                   inits = inits.list,
