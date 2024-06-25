@@ -47,7 +47,7 @@ plot(data.goldfinch$coords, pch = 19)
 # model converged. How do you know? Save the resulting model results in an
 # object called "out.non.sp". Use default initial values and prior distributions.
 out.non.sp <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) + scale(forest),
-                    det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                    det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                     data = data.goldfinch,
                     n.samples = 5000,
                     n.thin = 4,
@@ -75,7 +75,7 @@ inits <- list(sigma.sq = 3, phi = 3 / mean(dist.mat))
 tuning = list(phi = 0.5)
 out.sp.1 <- spPGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) +
                                     scale(forest),
-                    det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                    det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                     data = data.goldfinch, inits = inits, tuning = tuning,
                     n.batch = 200, batch.length = 25,
                     NNGP = TRUE, n.neighbors = 10, n.burn = 3000, n.thin = 4,
@@ -94,7 +94,7 @@ plot(out.sp.1, 'theta', density = FALSE)
 priors <- list(phi.unif = c(3 / max(dist.mat), 3 / 20000))
 out.sp.2 <- spPGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) +
                                     scale(forest),
-                    det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                    det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                     data = data.goldfinch, inits = inits, priors = priors,
                     tuning = tuning, n.batch = 200, batch.length = 25,
                     NNGP = TRUE, n.neighbors = 10, n.burn = 3000, n.thin = 4,
@@ -113,7 +113,7 @@ plot(out.sp.2, 'theta', density = FALSE)
 # couple of minutes in order to get it to converge.
 out.sp.3 <- spPGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) +
                                     scale(forest),
-                    det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                    det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                     data = data.goldfinch, inits = inits, priors = priors,
                     tuning = tuning, n.batch = 1200, batch.length = 25,
                     NNGP = TRUE, n.neighbors = 10, n.burn = 10000, n.thin = 40,
@@ -166,7 +166,7 @@ waicOcc(out.sp.3)
 # the k.fold.only argument to solely perform cross-validation and not re-run the
 # entire full model. Which model performs the best?
 k.fold.non.sp <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) + scale(forest),
-                       det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                       det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                        data = data.goldfinch,
                        n.samples = 5000,
                        n.thin = 4,
@@ -178,7 +178,7 @@ k.fold.non.sp <- PGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) 
                        k.fold.only = TRUE)
 k.fold.sp <- spPGOcc(occ.formula = ~ scale(elevation) + I(scale(elevation)^2) +
                                      scale(forest),
-                    det.formula = ~ scale(date) + I(scale(date^2)) + scale(dur),
+                    det.formula = ~ scale(date) + I(scale(date)^2) + scale(dur),
                     data = data.goldfinch, inits = inits, priors = priors,
                     tuning = tuning, n.batch = 1200, batch.length = 25,
                     NNGP = TRUE, n.neighbors = 10, n.burn = 10000, n.thin = 10,
