@@ -152,6 +152,12 @@ Literature for the software, methods, and concepts we discuss throughout the wor
 + `royle-2004-hds-Ecology.pdf`: paper introducing the hierarchical distance sampling model.
 + `sollman-2015-multi-species-HDS-MEE.pdf`: paper introducing the multi-species hierarchical distance sampling model.
 
+### Workshop feedback
+
+Please fill out the survey at the following link. We would really appreciate your feedback to help improve future courses! 
+
+Workshop feedback survey: [https://docs.google.com/forms/d/e/1FAIpQLSdeRfOVX2O6wxGs5e5uxMl1o2JlEm0ja4iCURuLD-E8FW9XSQ/viewform?usp=sf_link](https://docs.google.com/forms/d/e/1FAIpQLSdeRfOVX2O6wxGs5e5uxMl1o2JlEm0ja4iCURuLD-E8FW9XSQ/viewform?usp=sf_link). 
+
 ## Acknowledgements
 
 Some of the material covered in the lectures on classical geostatistics and modelling big spatial data was adapted from workshop material developed by [Andy Finley](https://www.finley-lab.com/). Some of the material covered in the multi-species occupancy modelling lecture was adapted from teaching material developed by [Elise Zipkin](https://zipkinlab.org/).
