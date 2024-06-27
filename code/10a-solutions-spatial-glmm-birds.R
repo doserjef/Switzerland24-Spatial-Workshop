@@ -128,6 +128,10 @@ summary(out.non.sp.nb)
 #           and tuning variances should again be adequate.
 
 # Model 3: Spatial Poisson ------------
+# Number of samples per chain
+(n.batch * batch.length - n.burn) / n.thin
+# Total samples
+((n.batch * batch.length - n.burn) / n.thin) * n.chains
 out.sp.p <- spAbund(formula = ~ scale(tcc) + scale(elev) + I(scale(elev)^2) +
                                 scale(ppt) + scale(day) + I(scale(day)^2) +
                                 (1 | obs),
@@ -219,7 +223,7 @@ str(pred.df)
 coords.0 <- as.matrix(pred.df[, c('x', 'y')])
 # Standardize the covariates by their appropriate means and sds
 tcc.pred <- (pred.df$tcc - mean(data.NOCA$covs$tcc)) / sd(data.NOCA$covs$tcc)
-elev.pred <- (pred.df$tcc - mean(data.NOCA$covs$tcc)) / sd(data.NOCA$covs$tcc)
+elev.pred <- (pred.df$elev - mean(data.NOCA$covs$elev)) / sd(data.NOCA$covs$elev)
 elev.2.pred <- elev.pred^2
 ppt.pred <- (pred.df$ppt - mean(data.NOCA$covs$ppt)) / sd(data.NOCA$covs$ppt)
 # Set day to 0
