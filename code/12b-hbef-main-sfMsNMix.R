@@ -20,7 +20,7 @@ library(spAbundance)
 # to run three separate scripts. This is also a good way to run R scripts on
 # a server or High Performance Computer. If just running this through R Studio,
 # the "chain" variable will be empty
-chain <- as.numeric(commandArgs(trailingOnly = TRUE))
+# chain <- as.numeric(commandArgs(trailingOnly = TRUE))
 # If not running the script from the command line, set the chain number manually:
 # NOTE: make sure this line is commented out if running from the command line.
 # chain <- 1

@@ -144,6 +144,9 @@ that is available in the [lectures](./lectures) directory.
   occupancy modelling section but now using the raw counts). We will see
   how spatial (and non-spatial) N-mixture models can be difficult to
   estimate in practice.
+- `11d-nmix-demo.R`: demo from Marc that gives an example of fitting an
+  N-mixture model with some simulated data on vipers using both
+  `unmarked` and `spAbundance`.
 - `12a-get-inits.R`: script to fit a multi-species spatial N-mixture
   model with data from the Hubbard Brook Experimental Forest. Here our
   goal is to predict abundance of four species across the forest. In
